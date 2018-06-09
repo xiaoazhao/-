@@ -1,0 +1,9 @@
+import requests
+def zcz():
+    url=['https://www.zhihu.com/','https://www.zhihu.com/question/268009004/answer/402501388']
+    file='Users/°¢•×/Desktop/hahah.html'
+    with open('Users/°¢•×/Desktop/hahah.html','a',encoding='utf-8')as f:
+        for i in range(2):
+            header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36'}
+            response=requests.get('https://www.zhihu.com/','https://www.zhihu.com/question/268009004/answer/402501388',headers=header)
+            f.write(response.text)
