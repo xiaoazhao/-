@@ -1,0 +1,11 @@
+sudo mysql -u root -p
+create database taobao_mysql chaeset=utf8;
+use taobao_mysql;
+create table shoppingcar(id int auto_increment primary key,enjoy varchar(30) not null,discount varchar(20) not null,hope varchar(30) not null);
+show tables;
+insert into shoppingcar(id,enjoy,discount,hope) Values(1,"greem","1","clother"),(2,"water","5","book"),(3,"phone","10","computer"),(4,"flower","5","hair"),(5,"dress","12","cups");
+update shoppingcar set enjoy="happy" where enjoy="greem";
+select*from shoppingcar;
+delete from shoppingcar where discount="10";
+select*from shoppingcar;
+good luck
