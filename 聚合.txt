@@ -1,0 +1,14 @@
+source /home/zhang/下载/hr.sql;
+show tables;
+select * from emp;
+select * from emp order by empno desc;
+select * from emp order by sal desc;
+select * from emp order by sal;
+select * from emp order by empno;
+select sum(sal) from emp;
+select sum(empno) from emp;
+select distinct(SAL) from emp;
+select max(sal) from emp;
+select min(sal) from emp;
+select * from emp where emp.empno not in (select min(empno) from emp group by sal having count(sal)>1);
+
