@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zhang</title>
+</head>
+<body>
+<h1><center>《锄禾》</center></h1>
+<h2><b><center>锄&nbsp;&nbsp;&nbsp;禾&nbsp;&nbsp;&nbsp;日&nbsp;&nbsp;&nbsp;当&nbsp;&nbsp;&nbsp;午</center></b></h2>
+<h2><b><center>汗&nbsp;&nbsp;&nbsp;滴&nbsp;&nbsp;&nbsp;禾&nbsp;&nbsp;&nbsp;下&nbsp;&nbsp;&nbsp;土</center></b></h2>
+<h2><b><center>谁&nbsp;&nbsp;&nbsp;知&nbsp;&nbsp;&nbsp;盘&nbsp;&nbsp;&nbsp;中&nbsp;&nbsp;&nbsp;餐</center></b></h2>
+<h2><b><center>粒&nbsp;&nbsp;&nbsp;粒&nbsp;&nbsp;&nbsp;皆&nbsp;&nbsp;&nbsp;辛&nbsp;&nbsp;&nbsp;苦</center></b></h2>
+</body>
+</html>
