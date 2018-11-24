@@ -1,0 +1,88 @@
+show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| hello_mysql        |
+| mysql              |
+| performance_schema |
+| sys                |
+| taobao_mysql       |
+| wx                 |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use taobao_mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++------------------------+
+| Tables_in_taobao_mysql |
++------------------------+
+| movies                 |
+| rnian                  |
+| shoppingcar            |
+| shoppingcart           |
++------------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from movies;
++----+------------------------+------+----------+-------+
+| id | name                   | year | director | grade |
++----+------------------------+------+----------+-------+
+|  1 | venom                  | 2018 | luben    |     9 |
+|  2 | find you               | 2018 | fxgang   |     8 |
+|  3 | Avengers: Infinity War | 2018 | Tom      |     9 |
+|  4 | Spider-Man             | 2017 | kim      |     8 |
++----+------------------------+------+----------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from movies where name like '%ind%';
++----+----------+------+----------+-------+
+| id | name     | year | director | grade |
++----+----------+------+----------+-------+
+|  2 | find you | 2018 | fxgang   |     8 |
++----+----------+------+----------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from movies where director like '%im%';
++----+------------+------+----------+-------+
+| id | name       | year | director | grade |
++----+------------+------+----------+-------+
+|  4 | Spider-Man | 2017 | kim      |     8 |
++----+------------+------+----------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from movies where year="2018";
++----+------------------------+------+----------+-------+
+| id | name                   | year | director | grade |
++----+------------------------+------+----------+-------+
+|  1 | venom                  | 2018 | luben    |     9 |
+|  2 | find you               | 2018 | fxgang   |     8 |
+|  3 | Avengers: Infinity War | 2018 | Tom      |     9 |
++----+------------------------+------+----------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from movies where grade>7;
++----+------------------------+------+----------+-------+
+| id | name                   | year | director | grade |
++----+------------------------+------+----------+-------+
+|  1 | venom                  | 2018 | luben    |     9 |
+|  2 | find you               | 2018 | fxgang   |     8 |
+|  3 | Avengers: Infinity War | 2018 | Tom      |     9 |
+|  4 | Spider-Man             | 2017 | kim      |     8 |
++----+------------------------+------+----------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from movies where grade>8;
++----+------------------------+------+----------+-------+
+| id | name                   | year | director | grade |
++----+------------------------+------+----------+-------+
+|  1 | venom                  | 2018 | luben    |     9 |
+|  3 | Avengers: Infinity War | 2018 | Tom      |     9 |
++----+------------------------+------+----------+-------+
+2 rows in set (0.00 sec)
+
+
